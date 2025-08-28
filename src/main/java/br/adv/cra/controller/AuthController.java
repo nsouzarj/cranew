@@ -148,4 +148,23 @@ public class AuthController {
             return ResponseEntity.badRequest().body(error);
         }
     }
+    
+    @PostMapping(value = "/debug-jwt", consumes = "application/json", produces = "application/json")
+    public ResponseEntity<?> debugJwt(@RequestBody Map<String, String> request) {
+        try {
+            String username = request.get("username");
+            if (username == null || username.trim().isEmpty()) {
+                username = "testuser";
+            }
+            
+            Map<String, Object> result = authService.debugJwtGeneration(username);
+            return ResponseEntity.ok(result);
+        } catch (Exception e) {
+            Map<String, Object> error = new HashMap<>();
+            error.put("error", "JWT debug failed");
+            error.put("message", e.getMessage());
+            error.put("stackTrace", e.getStackTrace()[0].toString());
+            return ResponseEntity.badRequest().body(error);
+        }
+    }
 }

@@ -167,6 +167,72 @@
       "_type": "request"
     },
     {
+      "_id": "req_auth_debug_jwt",
+      "parentId": "fld_auth",
+      "modified": 1693228800000,
+      "created": 1693228800000,
+      "url": "{{ _.base_url }}/api/auth/debug-jwt",
+      "name": "Debug JWT",
+      "description": "Test JWT token generation and parsing",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"username\": \"admin\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_content_type",
+          "name": "Content-Type",
+          "value": "application/json",
+          "disabled": false
+        },
+        {
+          "id": "pair_accept",
+          "name": "Accept",
+          "value": "application/json",
+          "disabled": false
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1693228350000,
+      "isPrivate": false,
+      "_type": "request"
+    },
+    {
+      "_id": "req_auth_test_password",
+      "parentId": "fld_auth",
+      "modified": 1693228800000,
+      "created": 1693228800000,
+      "url": "{{ _.base_url }}/api/auth/test-password",
+      "name": "Test Password Hash",
+      "description": "Test if password matches the stored hash",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"username\": \"admin\",\n  \"password\": \"admin123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_content_type",
+          "name": "Content-Type",
+          "value": "application/json",
+          "disabled": false
+        },
+        {
+          "id": "pair_accept",
+          "name": "Accept",
+          "value": "application/json",
+          "disabled": false
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1693228300000,
+      "isPrivate": false,
+      "_type": "request"
+    },
+    {
       "_id": "req_usuarios_list",
       "parentId": "fld_usuarios",
       "modified": 1693228800000,

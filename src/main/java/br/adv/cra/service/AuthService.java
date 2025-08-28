@@ -205,4 +205,55 @@ public class AuthService {
         
         return result;
     }
+    
+    @Transactional(readOnly = true)
+    public Map<String, Object> debugJwtGeneration(String username) {
+        Map<String, Object> result = new HashMap<>();
+        
+        try {
+            // Generate a test JWT token
+            String testToken = jwtUtils.generateTokenFromUsername(username);
+            
+            // Analyze the token structure
+            String[] tokenParts = testToken.split("\\.");
+            
+            result.put("username", username);
+            result.put("tokenGenerated", true);
+            result.put("tokenParts", tokenParts.length);
+            result.put("expectedParts", 3);
+            result.put("token", testToken);
+            result.put("tokenLength", testToken.length());
+            
+            if (tokenParts.length == 3) {
+                result.put("header", tokenParts[0]);
+                result.put("payload", tokenParts[1]);
+                result.put("signature", tokenParts[2]);
+                result.put("status", "SUCCESS");
+                
+                // Test token validation
+                boolean isValid = jwtUtils.validateJwtToken(testToken);
+                result.put("tokenValid", isValid);
+                
+                if (isValid) {
+                    try {
+                        String extractedUsername = jwtUtils.getUserNameFromJwtToken(testToken);
+                        result.put("extractedUsername", extractedUsername);
+                        result.put("usernameMatches", username.equals(extractedUsername));
+                    } catch (Exception e) {
+                        result.put("extractionError", e.getMessage());
+                    }
+                }
+            } else {
+                result.put("status", "ERROR");
+                result.put("message", "Token has " + tokenParts.length + " parts instead of 3");
+            }
+            
+        } catch (Exception e) {
+            result.put("status", "ERROR");
+            result.put("message", e.getMessage());
+            result.put("exceptionClass", e.getClass().getSimpleName());
+        }
+        
+        return result;
+    }
 }

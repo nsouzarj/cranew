@@ -114,7 +114,29 @@ public class JwtUtils {
     }
     
     private Key getSignInKey() {
-        byte[] keyBytes = Decoders.BASE64.decode(jwtSecret);
+        // Use the secret directly as bytes, ensuring it's long enough for HS256
+        byte[] keyBytes;
+        
+        // Check if the secret is Base64 encoded and decode it
+        try {
+            if (jwtSecret.length() > 32 && jwtSecret.matches("^[A-Za-z0-9+/]*={0,2}$")) {
+                keyBytes = Decoders.BASE64.decode(jwtSecret);
+            } else {
+                keyBytes = jwtSecret.getBytes();
+            }
+        } catch (Exception e) {
+            log.debug("Using JWT secret as plain string: {}", e.getMessage());
+            keyBytes = jwtSecret.getBytes();
+        }
+        
+        // Ensure the key is at least 256 bits (32 bytes) for HS256
+        if (keyBytes.length < 32) {
+            log.warn("JWT secret is too short, padding to 32 bytes");
+            byte[] paddedKey = new byte[32];
+            System.arraycopy(keyBytes, 0, paddedKey, 0, Math.min(keyBytes.length, 32));
+            keyBytes = paddedKey;
+        }
+        
         return Keys.hmacShaKeyFor(keyBytes);
     }
     
