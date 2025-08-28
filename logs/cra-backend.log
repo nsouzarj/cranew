@@ -1,48 +1,47 @@
-2025-08-28T15:51:44.529-03:00  INFO 17628 --- [main] br.adv.cra.CraBackendApplication         : Starting CraBackendApplication using Java 23.0.2 with PID 17628 (D:\Projetos\cranew\target\classes started by nsouz in D:\Projetos\cranew)
-2025-08-28T15:51:44.533-03:00 DEBUG 17628 --- [main] br.adv.cra.CraBackendApplication         : Running with Spring Boot v3.2.5, Spring v6.1.6
-2025-08-28T15:51:44.535-03:00  INFO 17628 --- [main] br.adv.cra.CraBackendApplication         : No active profile set, falling back to 1 default profile: "default"
-2025-08-28T15:51:46.404-03:00  INFO 17628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-28T15:51:46.569-03:00  INFO 17628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146 ms. Found 8 JPA repository interfaces.
-2025-08-28T15:51:48.035-03:00  INFO 17628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-28T15:51:48.066-03:00  INFO 17628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-28T15:51:48.067-03:00  INFO 17628 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2025-08-28T15:51:48.211-03:00  INFO 17628 --- [main] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring embedded WebApplicationContext
-2025-08-28T15:51:48.212-03:00  INFO 17628 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3547 ms
-2025-08-28T15:51:48.385-03:00  INFO 17628 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Starting...
-2025-08-28T15:51:48.740-03:00  INFO 17628 --- [main] com.zaxxer.hikari.pool.HikariPool        : CraHikariPool - Added connection org.postgresql.jdbc.PgConnection@73c48264
-2025-08-28T15:51:48.742-03:00  INFO 17628 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Start completed.
-2025-08-28T15:51:49.015-03:00  INFO 17628 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-28T15:51:49.143-03:00  INFO 17628 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-08-28T15:51:49.236-03:00  INFO 17628 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-28T15:51:49.753-03:00  INFO 17628 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-28T15:51:49.863-03:00  WARN 17628 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-28T15:51:51.521-03:00  INFO 17628 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-28T15:51:51.708-03:00  INFO 17628 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-28T15:51:52.401-03:00  INFO 17628 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-08-28T15:51:53.210-03:00 DEBUG 17628 --- [main] br.adv.cra.security.AuthTokenFilter      : Filter 'authTokenFilter' configured for use
-2025-08-28T15:51:53.758-03:00  WARN 17628 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-28T15:51:54.394-03:00  INFO 17628 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4bd1541f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78f18a87, org.springframework.security.web.context.SecurityContextHolderFilter@682bff78, org.springframework.security.web.header.HeaderWriterFilter@7cb9295f, org.springframework.web.filter.CorsFilter@77b6d94c, org.springframework.security.web.authentication.logout.LogoutFilter@7170da18, br.adv.cra.security.AuthTokenFilter@27ca8a5a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e22fdc0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74de1e9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b51a4c7, org.springframework.security.web.session.SessionManagementFilter@6adee80f, org.springframework.security.web.access.ExceptionTranslationFilter@298154d4, org.springframework.security.web.access.intercept.AuthorizationFilter@20326436]
-2025-08-28T15:51:54.926-03:00  INFO 17628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/cra-api'
-2025-08-28T15:51:54.939-03:00  INFO 17628 --- [main] br.adv.cra.CraBackendApplication         : Started CraBackendApplication in 11.217 seconds (process running for 12.014)
-2025-08-28T15:51:54.954-03:00  INFO 17628 --- [main] b.a.c.service.DatabaseConnectionService  : === DATABASE CONNECTION TEST ===
-2025-08-28T15:51:54.955-03:00  INFO 17628 --- [main] b.a.c.service.DatabaseConnectionService  : Database Product: PostgreSQL
-2025-08-28T15:51:54.955-03:00  INFO 17628 --- [main] b.a.c.service.DatabaseConnectionService  : Database Version: 17.2 (Debian 17.2-1.pgdg120+1)
-2025-08-28T15:51:54.956-03:00  INFO 17628 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Name: PostgreSQL JDBC Driver
-2025-08-28T15:51:54.956-03:00  INFO 17628 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Version: 42.6.2
-2025-08-28T15:51:54.956-03:00  INFO 17628 --- [main] b.a.c.service.DatabaseConnectionService  : URL: jdbc:postgresql://192.168.1.105:5432/dbcra
-2025-08-28T15:51:54.957-03:00  INFO 17628 --- [main] b.a.c.service.DatabaseConnectionService  : Username: postgres
-2025-08-28T15:51:54.959-03:00  INFO 17628 --- [main] b.a.c.service.DatabaseConnectionService  : Schema: public
-2025-08-28T15:51:54.959-03:00  INFO 17628 --- [main] b.a.c.service.DatabaseConnectionService  : Catalog: dbcra
-2025-08-28T15:51:54.979-03:00  INFO 17628 --- [main] b.a.c.service.DatabaseConnectionService  : Current Database Time: 2025-08-28 15:51:55.960733-03
-2025-08-28T15:51:54.980-03:00  INFO 17628 --- [main] b.a.c.service.DatabaseConnectionService  : Database connection successful! ✅
-2025-08-28T15:52:01.334-03:00  INFO 17628 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-28T15:52:01.336-03:00  INFO 17628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-28T15:52:01.337-03:00  INFO 17628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-08-28T15:52:01.419-03:00 ERROR 17628 --- [http-nio-8080-exec-1] b.adv.cra.config.GlobalExceptionHandler  : Unexpected exception occurred: 
+2025-08-28T17:16:43.430-03:00  INFO 29980 --- [main] br.adv.cra.CraBackendApplication         : Starting CraBackendApplication using Java 23.0.2 with PID 29980 (D:\Projetos\cranew\target\classes started by nsouz in D:\Projetos\cranew)
+2025-08-28T17:16:43.434-03:00 DEBUG 29980 --- [main] br.adv.cra.CraBackendApplication         : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-28T17:16:43.436-03:00  INFO 29980 --- [main] br.adv.cra.CraBackendApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T17:16:45.087-03:00  INFO 29980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T17:16:45.222-03:00  INFO 29980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 8 JPA repository interfaces.
+2025-08-28T17:16:46.513-03:00  INFO 29980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-28T17:16:46.538-03:00  INFO 29980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T17:16:46.539-03:00  INFO 29980 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-28T17:16:46.669-03:00  INFO 29980 --- [main] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T17:16:46.670-03:00  INFO 29980 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3116 ms
+2025-08-28T17:16:46.829-03:00  INFO 29980 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Starting...
+2025-08-28T17:16:47.151-03:00  INFO 29980 --- [main] com.zaxxer.hikari.pool.HikariPool        : CraHikariPool - Added connection org.postgresql.jdbc.PgConnection@4bb1b96b
+2025-08-28T17:16:47.154-03:00  INFO 29980 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Start completed.
+2025-08-28T17:16:47.378-03:00  INFO 29980 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T17:16:47.528-03:00  INFO 29980 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-08-28T17:16:47.608-03:00  INFO 29980 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T17:16:48.055-03:00  INFO 29980 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T17:16:48.160-03:00  WARN 29980 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T17:16:49.703-03:00  INFO 29980 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T17:16:49.963-03:00  INFO 29980 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:16:50.651-03:00  INFO 29980 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T17:16:51.713-03:00 DEBUG 29980 --- [main] br.adv.cra.security.AuthTokenFilter      : Filter 'authTokenFilter' configured for use
+2025-08-28T17:16:52.299-03:00  WARN 29980 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T17:16:52.928-03:00  INFO 29980 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3269ae62, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@259d5279, org.springframework.security.web.context.SecurityContextHolderFilter@6b4133d0, org.springframework.security.web.header.HeaderWriterFilter@180466a9, org.springframework.web.filter.CorsFilter@3c9e169f, org.springframework.security.web.authentication.logout.LogoutFilter@2f0dae44, br.adv.cra.security.AuthTokenFilter@5ce9c9e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e1349cf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b47e09c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cfc4475, org.springframework.security.web.session.SessionManagementFilter@51ce8293, org.springframework.security.web.access.ExceptionTranslationFilter@2f48adcc, org.springframework.security.web.access.intercept.AuthorizationFilter@5869f15f]
+2025-08-28T17:16:53.430-03:00  INFO 29980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/cra-api'
+2025-08-28T17:16:53.443-03:00  INFO 29980 --- [main] br.adv.cra.CraBackendApplication         : Started CraBackendApplication in 10.942 seconds (process running for 11.578)
+2025-08-28T17:16:53.453-03:00  INFO 29980 --- [main] b.a.c.service.DatabaseConnectionService  : === DATABASE CONNECTION TEST ===
+2025-08-28T17:16:53.453-03:00  INFO 29980 --- [main] b.a.c.service.DatabaseConnectionService  : Database Product: PostgreSQL
+2025-08-28T17:16:53.454-03:00  INFO 29980 --- [main] b.a.c.service.DatabaseConnectionService  : Database Version: 17.2 (Debian 17.2-1.pgdg120+1)
+2025-08-28T17:16:53.455-03:00  INFO 29980 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Name: PostgreSQL JDBC Driver
+2025-08-28T17:16:53.455-03:00  INFO 29980 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Version: 42.6.2
+2025-08-28T17:16:53.455-03:00  INFO 29980 --- [main] b.a.c.service.DatabaseConnectionService  : URL: jdbc:postgresql://192.168.1.105:5432/dbcra
+2025-08-28T17:16:53.456-03:00  INFO 29980 --- [main] b.a.c.service.DatabaseConnectionService  : Username: postgres
+2025-08-28T17:16:53.459-03:00  INFO 29980 --- [main] b.a.c.service.DatabaseConnectionService  : Schema: public
+2025-08-28T17:16:53.461-03:00  INFO 29980 --- [main] b.a.c.service.DatabaseConnectionService  : Catalog: dbcra
+2025-08-28T17:16:53.477-03:00  INFO 29980 --- [main] b.a.c.service.DatabaseConnectionService  : Current Database Time: 2025-08-28 17:16:52.611923-03
+2025-08-28T17:16:53.478-03:00  INFO 29980 --- [main] b.a.c.service.DatabaseConnectionService  : Database connection successful! ✅
+2025-08-28T17:17:35.314-03:00  INFO 29980 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T17:17:35.315-03:00  INFO 29980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-28T17:17:35.317-03:00  INFO 29980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-28T17:17:35.455-03:00 ERROR 29980 --- [http-nio-8080-exec-1] b.adv.cra.config.GlobalExceptionHandler  : Runtime exception occurred: 
 
-org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/octet-stream' is not supported
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:213) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161) ~[spring-webmvc-6.1.6.jar:6.1.6]
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> br.adv.cra.controller.AuthController.authenticateUser(br.adv.cra.dto.LoginRequest)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:164) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:135) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.6.jar:6.1.6]
 	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.6.jar:6.1.6]
@@ -83,7 +82,7 @@ org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'applic
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at br.adv.cra.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:51) ~[classes/:na]
+	at br.adv.cra.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:64) ~[classes/:na]
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
@@ -145,11 +144,10 @@ org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'applic
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
 
-2025-08-28T15:52:04.044-03:00 ERROR 17628 --- [http-nio-8080-exec-2] b.adv.cra.config.GlobalExceptionHandler  : Unexpected exception occurred: 
+2025-08-28T17:17:41.865-03:00 ERROR 29980 --- [http-nio-8080-exec-2] b.adv.cra.config.GlobalExceptionHandler  : Runtime exception occurred: 
 
-org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/octet-stream' is not supported
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:213) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161) ~[spring-webmvc-6.1.6.jar:6.1.6]
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> br.adv.cra.controller.AuthController.authenticateUser(br.adv.cra.dto.LoginRequest)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:164) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:135) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.6.jar:6.1.6]
 	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.6.jar:6.1.6]
@@ -190,7 +188,7 @@ org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'applic
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at br.adv.cra.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:51) ~[classes/:na]
+	at br.adv.cra.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:64) ~[classes/:na]
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
@@ -252,11 +250,10 @@ org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'applic
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
 
-2025-08-28T15:52:05.187-03:00 ERROR 17628 --- [http-nio-8080-exec-3] b.adv.cra.config.GlobalExceptionHandler  : Unexpected exception occurred: 
+2025-08-28T17:18:01.571-03:00 ERROR 29980 --- [http-nio-8080-exec-3] b.adv.cra.config.GlobalExceptionHandler  : Runtime exception occurred: 
 
-org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/octet-stream' is not supported
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:213) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161) ~[spring-webmvc-6.1.6.jar:6.1.6]
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> br.adv.cra.controller.AuthController.authenticateUser(br.adv.cra.dto.LoginRequest)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:164) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:135) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.6.jar:6.1.6]
 	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.6.jar:6.1.6]
@@ -297,7 +294,7 @@ org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'applic
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at br.adv.cra.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:51) ~[classes/:na]
+	at br.adv.cra.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:64) ~[classes/:na]
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
@@ -359,24 +356,21 @@ org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'applic
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
 
-2025-08-28T15:52:33.777-03:00 ERROR 17628 --- [http-nio-8080-exec-4] b.adv.cra.config.GlobalExceptionHandler  : Unexpected exception occurred: 
+2025-08-28T17:19:52.384-03:00 ERROR 29980 --- [http-nio-8080-exec-4] b.adv.cra.config.GlobalExceptionHandler  : Unexpected exception occurred: 
 
-org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/octet-stream' is not supported
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:213) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:135) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:507) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
@@ -404,7 +398,7 @@ org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'applic
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at br.adv.cra.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:51) ~[classes/:na]
+	at br.adv.cra.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:64) ~[classes/:na]
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
@@ -466,24 +460,61 @@ org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'applic
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
 
-2025-08-28T15:52:35.618-03:00 ERROR 17628 --- [http-nio-8080-exec-5] b.adv.cra.config.GlobalExceptionHandler  : Unexpected exception occurred: 
+2025-08-28T17:20:27.220-03:00  INFO 3428 --- [main] br.adv.cra.CraBackendApplication         : Starting CraBackendApplication using Java 23.0.2 with PID 3428 (D:\Projetos\cranew\target\classes started by nsouz in D:\Projetos\cranew)
+2025-08-28T17:20:27.221-03:00 DEBUG 3428 --- [main] br.adv.cra.CraBackendApplication         : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-28T17:20:27.223-03:00  INFO 3428 --- [main] br.adv.cra.CraBackendApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T17:20:28.809-03:00  INFO 3428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T17:20:28.964-03:00  INFO 3428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 8 JPA repository interfaces.
+2025-08-28T17:20:30.193-03:00  INFO 3428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-28T17:20:30.214-03:00  INFO 3428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T17:20:30.216-03:00  INFO 3428 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-28T17:20:30.329-03:00  INFO 3428 --- [main] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T17:20:30.330-03:00  INFO 3428 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2986 ms
+2025-08-28T17:20:30.487-03:00  INFO 3428 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Starting...
+2025-08-28T17:20:30.839-03:00  INFO 3428 --- [main] com.zaxxer.hikari.pool.HikariPool        : CraHikariPool - Added connection org.postgresql.jdbc.PgConnection@315c081
+2025-08-28T17:20:30.842-03:00  INFO 3428 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Start completed.
+2025-08-28T17:20:31.050-03:00  INFO 3428 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T17:20:31.174-03:00  INFO 3428 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-08-28T17:20:31.242-03:00  INFO 3428 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T17:20:31.674-03:00  INFO 3428 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T17:20:31.787-03:00  WARN 3428 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T17:20:33.448-03:00  INFO 3428 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T17:20:33.690-03:00  INFO 3428 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:20:34.386-03:00  INFO 3428 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T17:20:35.194-03:00 DEBUG 3428 --- [main] br.adv.cra.security.AuthTokenFilter      : Filter 'authTokenFilter' configured for use
+2025-08-28T17:20:35.723-03:00  WARN 3428 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T17:20:36.297-03:00  INFO 3428 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f040f9e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77cf9b08, org.springframework.security.web.context.SecurityContextHolderFilter@5739b804, org.springframework.security.web.header.HeaderWriterFilter@6990f6af, org.springframework.web.filter.CorsFilter@20326436, org.springframework.security.web.authentication.logout.LogoutFilter@382fba37, br.adv.cra.security.AuthTokenFilter@2252dc5d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6adee80f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@180466a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5faa0c51, org.springframework.security.web.session.SessionManagementFilter@3ef8de39, org.springframework.security.web.access.ExceptionTranslationFilter@2db55dec, org.springframework.security.web.access.intercept.AuthorizationFilter@4d00b076]
+2025-08-28T17:20:36.769-03:00  INFO 3428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/cra-api'
+2025-08-28T17:20:36.782-03:00  INFO 3428 --- [main] br.adv.cra.CraBackendApplication         : Started CraBackendApplication in 10.325 seconds (process running for 10.831)
+2025-08-28T17:20:36.790-03:00  INFO 3428 --- [main] b.a.c.service.DatabaseConnectionService  : === DATABASE CONNECTION TEST ===
+2025-08-28T17:20:36.790-03:00  INFO 3428 --- [main] b.a.c.service.DatabaseConnectionService  : Database Product: PostgreSQL
+2025-08-28T17:20:36.790-03:00  INFO 3428 --- [main] b.a.c.service.DatabaseConnectionService  : Database Version: 17.2 (Debian 17.2-1.pgdg120+1)
+2025-08-28T17:20:36.791-03:00  INFO 3428 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Name: PostgreSQL JDBC Driver
+2025-08-28T17:20:36.791-03:00  INFO 3428 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Version: 42.6.2
+2025-08-28T17:20:36.791-03:00  INFO 3428 --- [main] b.a.c.service.DatabaseConnectionService  : URL: jdbc:postgresql://192.168.1.105:5432/dbcra
+2025-08-28T17:20:36.792-03:00  INFO 3428 --- [main] b.a.c.service.DatabaseConnectionService  : Username: postgres
+2025-08-28T17:20:36.794-03:00  INFO 3428 --- [main] b.a.c.service.DatabaseConnectionService  : Schema: public
+2025-08-28T17:20:36.794-03:00  INFO 3428 --- [main] b.a.c.service.DatabaseConnectionService  : Catalog: dbcra
+2025-08-28T17:20:36.814-03:00  INFO 3428 --- [main] b.a.c.service.DatabaseConnectionService  : Current Database Time: 2025-08-28 17:20:21.75626-03
+2025-08-28T17:20:36.815-03:00  INFO 3428 --- [main] b.a.c.service.DatabaseConnectionService  : Database connection successful! ✅
+2025-08-28T17:20:40.010-03:00  INFO 3428 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T17:20:40.011-03:00  INFO 3428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-28T17:20:40.013-03:00  INFO 3428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-28T17:20:40.095-03:00 ERROR 3428 --- [http-nio-8080-exec-1] b.adv.cra.config.GlobalExceptionHandler  : Unexpected exception occurred: 
 
-org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/octet-stream' is not supported
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:213) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:135) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:507) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
@@ -511,7 +542,7 @@ org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'applic
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at br.adv.cra.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:51) ~[classes/:na]
+	at br.adv.cra.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:64) ~[classes/:na]
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
@@ -573,485 +604,64 @@ org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'applic
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
 	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
 
-2025-08-28T15:53:30.124-03:00 ERROR 17628 --- [http-nio-8080-exec-6] b.adv.cra.config.GlobalExceptionHandler  : Unexpected exception occurred: 
-
-org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/octet-stream' is not supported
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:213) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:135) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.20.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at br.adv.cra.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:51) ~[classes/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.4.jar:6.2.4]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
-
-2025-08-28T16:01:14.994-03:00 DEBUG 17628 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:02:19.497-03:00 DEBUG 17628 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:03:09.188-03:00 DEBUG 17628 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:08:13.132-03:00  INFO 16908 --- [main] br.adv.cra.CraBackendApplication         : Starting CraBackendApplication using Java 23.0.2 with PID 16908 (D:\Projetos\cranew\target\classes started by nsouz in D:\Projetos\cranew)
-2025-08-28T16:08:13.134-03:00 DEBUG 16908 --- [main] br.adv.cra.CraBackendApplication         : Running with Spring Boot v3.2.5, Spring v6.1.6
-2025-08-28T16:08:13.136-03:00  INFO 16908 --- [main] br.adv.cra.CraBackendApplication         : No active profile set, falling back to 1 default profile: "default"
-2025-08-28T16:08:15.110-03:00  INFO 16908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-28T16:08:15.262-03:00  INFO 16908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 8 JPA repository interfaces.
-2025-08-28T16:08:16.961-03:00  INFO 16908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-28T16:08:16.997-03:00  INFO 16908 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-28T16:08:16.999-03:00  INFO 16908 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2025-08-28T16:08:17.168-03:00  INFO 16908 --- [main] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring embedded WebApplicationContext
-2025-08-28T16:08:17.169-03:00  INFO 16908 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3863 ms
-2025-08-28T16:08:17.403-03:00  INFO 16908 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Starting...
-2025-08-28T16:08:17.958-03:00  INFO 16908 --- [main] com.zaxxer.hikari.pool.HikariPool        : CraHikariPool - Added connection org.postgresql.jdbc.PgConnection@2dafae61
-2025-08-28T16:08:17.963-03:00  INFO 16908 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Start completed.
-2025-08-28T16:08:18.206-03:00  INFO 16908 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-28T16:08:18.407-03:00  INFO 16908 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-08-28T16:08:18.513-03:00  INFO 16908 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-28T16:08:19.100-03:00  INFO 16908 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-28T16:08:19.250-03:00  WARN 16908 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-28T16:08:21.505-03:00  INFO 16908 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-28T16:08:21.781-03:00  INFO 16908 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-28T16:08:22.535-03:00  INFO 16908 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-08-28T16:08:23.567-03:00 DEBUG 16908 --- [main] br.adv.cra.security.AuthTokenFilter      : Filter 'authTokenFilter' configured for use
-2025-08-28T16:08:24.313-03:00  WARN 16908 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-28T16:08:25.040-03:00  INFO 16908 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@78f18a87, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77b6d94c, org.springframework.security.web.context.SecurityContextHolderFilter@7528ece2, org.springframework.security.web.header.HeaderWriterFilter@2b6282bb, org.springframework.web.filter.CorsFilter@5b51a4c7, org.springframework.security.web.authentication.logout.LogoutFilter@20616795, br.adv.cra.security.AuthTokenFilter@5ce9c9e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74de1e9d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43b9ef41, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a61721e, org.springframework.security.web.session.SessionManagementFilter@180466a9, org.springframework.security.web.access.ExceptionTranslationFilter@474aeac5, org.springframework.security.web.access.intercept.AuthorizationFilter@5faa0c51]
-2025-08-28T16:08:25.580-03:00  INFO 16908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/cra-api'
-2025-08-28T16:08:25.597-03:00  INFO 16908 --- [main] br.adv.cra.CraBackendApplication         : Started CraBackendApplication in 13.537 seconds (process running for 14.284)
-2025-08-28T16:08:25.608-03:00  INFO 16908 --- [main] b.a.c.service.DatabaseConnectionService  : === DATABASE CONNECTION TEST ===
-2025-08-28T16:08:25.609-03:00  INFO 16908 --- [main] b.a.c.service.DatabaseConnectionService  : Database Product: PostgreSQL
-2025-08-28T16:08:25.611-03:00  INFO 16908 --- [main] b.a.c.service.DatabaseConnectionService  : Database Version: 17.2 (Debian 17.2-1.pgdg120+1)
-2025-08-28T16:08:25.611-03:00  INFO 16908 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Name: PostgreSQL JDBC Driver
-2025-08-28T16:08:25.612-03:00  INFO 16908 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Version: 42.6.2
-2025-08-28T16:08:25.613-03:00  INFO 16908 --- [main] b.a.c.service.DatabaseConnectionService  : URL: jdbc:postgresql://192.168.1.105:5432/dbcra
-2025-08-28T16:08:25.613-03:00  INFO 16908 --- [main] b.a.c.service.DatabaseConnectionService  : Username: postgres
-2025-08-28T16:08:25.615-03:00  INFO 16908 --- [main] b.a.c.service.DatabaseConnectionService  : Schema: public
-2025-08-28T16:08:25.616-03:00  INFO 16908 --- [main] b.a.c.service.DatabaseConnectionService  : Catalog: dbcra
-2025-08-28T16:08:25.632-03:00  INFO 16908 --- [main] b.a.c.service.DatabaseConnectionService  : Current Database Time: 2025-08-28 16:08:26.711004-03
-2025-08-28T16:08:25.634-03:00  INFO 16908 --- [main] b.a.c.service.DatabaseConnectionService  : Database connection successful! ✅
-2025-08-28T16:13:47.154-03:00  INFO 16908 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-28T16:13:47.156-03:00  INFO 16908 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-28T16:13:47.160-03:00  INFO 16908 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-08-28T16:13:47.841-03:00 DEBUG 16908 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:14:14.737-03:00 DEBUG 16908 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:14:50.723-03:00  INFO 21204 --- [main] br.adv.cra.CraBackendApplication         : Starting CraBackendApplication using Java 23.0.2 with PID 21204 (D:\Projetos\cranew\target\classes started by nsouz in D:\Projetos\cranew)
-2025-08-28T16:14:50.727-03:00 DEBUG 21204 --- [main] br.adv.cra.CraBackendApplication         : Running with Spring Boot v3.2.5, Spring v6.1.6
-2025-08-28T16:14:50.730-03:00  INFO 21204 --- [main] br.adv.cra.CraBackendApplication         : No active profile set, falling back to 1 default profile: "default"
-2025-08-28T16:14:52.778-03:00  INFO 21204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-28T16:14:52.960-03:00  INFO 21204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 8 JPA repository interfaces.
-2025-08-28T16:14:54.699-03:00  INFO 21204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-28T16:14:54.747-03:00  INFO 21204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-28T16:14:54.749-03:00  INFO 21204 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2025-08-28T16:14:54.919-03:00  INFO 21204 --- [main] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring embedded WebApplicationContext
-2025-08-28T16:14:54.920-03:00  INFO 21204 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4030 ms
-2025-08-28T16:14:55.132-03:00  INFO 21204 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Starting...
-2025-08-28T16:14:55.604-03:00  INFO 21204 --- [main] com.zaxxer.hikari.pool.HikariPool        : CraHikariPool - Added connection org.postgresql.jdbc.PgConnection@151732fb
-2025-08-28T16:14:55.608-03:00  INFO 21204 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Start completed.
-2025-08-28T16:14:55.892-03:00  INFO 21204 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-28T16:14:56.094-03:00  INFO 21204 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-08-28T16:14:56.201-03:00  INFO 21204 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-28T16:14:56.844-03:00  INFO 21204 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-28T16:14:56.986-03:00  WARN 21204 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-28T16:14:59.624-03:00  INFO 21204 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-28T16:14:59.894-03:00  INFO 21204 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-28T16:15:00.739-03:00  INFO 21204 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-08-28T16:15:01.796-03:00 DEBUG 21204 --- [main] br.adv.cra.security.AuthTokenFilter      : Filter 'authTokenFilter' configured for use
-2025-08-28T16:15:02.742-03:00  WARN 21204 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-28T16:15:03.635-03:00  INFO 21204 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30e29c0c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1dc9aba0, org.springframework.security.web.context.SecurityContextHolderFilter@2b6282bb, org.springframework.security.web.header.HeaderWriterFilter@21339b6f, org.springframework.web.filter.CorsFilter@382fba37, org.springframework.security.web.authentication.logout.LogoutFilter@616e7884, br.adv.cra.security.AuthTokenFilter@39153b05, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18ea9bec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2dacaa7f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f81d7f, org.springframework.security.web.session.SessionManagementFilter@298154d4, org.springframework.security.web.access.ExceptionTranslationFilter@71b75f99, org.springframework.security.web.access.intercept.AuthorizationFilter@79fa9f97]
-2025-08-28T16:15:04.287-03:00  INFO 21204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/cra-api'
-2025-08-28T16:15:04.305-03:00  INFO 21204 --- [main] br.adv.cra.CraBackendApplication         : Started CraBackendApplication in 14.633 seconds (process running for 15.495)
-2025-08-28T16:15:04.316-03:00  INFO 21204 --- [main] b.a.c.service.DatabaseConnectionService  : === DATABASE CONNECTION TEST ===
-2025-08-28T16:15:04.317-03:00  INFO 21204 --- [main] b.a.c.service.DatabaseConnectionService  : Database Product: PostgreSQL
-2025-08-28T16:15:04.317-03:00  INFO 21204 --- [main] b.a.c.service.DatabaseConnectionService  : Database Version: 17.2 (Debian 17.2-1.pgdg120+1)
-2025-08-28T16:15:04.318-03:00  INFO 21204 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Name: PostgreSQL JDBC Driver
-2025-08-28T16:15:04.319-03:00  INFO 21204 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Version: 42.6.2
-2025-08-28T16:15:04.319-03:00  INFO 21204 --- [main] b.a.c.service.DatabaseConnectionService  : URL: jdbc:postgresql://192.168.1.105:5432/dbcra
-2025-08-28T16:15:04.320-03:00  INFO 21204 --- [main] b.a.c.service.DatabaseConnectionService  : Username: postgres
-2025-08-28T16:15:04.323-03:00  INFO 21204 --- [main] b.a.c.service.DatabaseConnectionService  : Schema: public
-2025-08-28T16:15:04.323-03:00  INFO 21204 --- [main] b.a.c.service.DatabaseConnectionService  : Catalog: dbcra
-2025-08-28T16:15:04.344-03:00  INFO 21204 --- [main] b.a.c.service.DatabaseConnectionService  : Current Database Time: 2025-08-28 16:15:05.38744-03
-2025-08-28T16:15:04.344-03:00  INFO 21204 --- [main] b.a.c.service.DatabaseConnectionService  : Database connection successful! ✅
-2025-08-28T16:15:12.341-03:00  INFO 21204 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-28T16:15:12.342-03:00  INFO 21204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-28T16:15:12.345-03:00  INFO 21204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-08-28T16:15:13.739-03:00 DEBUG 21204 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:15:26.973-03:00 DEBUG 21204 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:16:39.122-03:00  INFO 17844 --- [main] br.adv.cra.CraBackendApplication         : Starting CraBackendApplication using Java 23.0.2 with PID 17844 (D:\Projetos\cranew\target\classes started by nsouz in D:\Projetos\cranew)
-2025-08-28T16:16:39.124-03:00 DEBUG 17844 --- [main] br.adv.cra.CraBackendApplication         : Running with Spring Boot v3.2.5, Spring v6.1.6
-2025-08-28T16:16:39.125-03:00  INFO 17844 --- [main] br.adv.cra.CraBackendApplication         : No active profile set, falling back to 1 default profile: "default"
-2025-08-28T16:16:41.287-03:00  INFO 17844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-28T16:16:41.463-03:00  INFO 17844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159 ms. Found 8 JPA repository interfaces.
-2025-08-28T16:16:43.190-03:00  INFO 17844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-28T16:16:43.225-03:00  INFO 17844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-28T16:16:43.227-03:00  INFO 17844 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2025-08-28T16:16:43.410-03:00  INFO 17844 --- [main] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring embedded WebApplicationContext
-2025-08-28T16:16:43.411-03:00  INFO 17844 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4141 ms
-2025-08-28T16:16:43.575-03:00  INFO 17844 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Starting...
-2025-08-28T16:16:43.962-03:00  INFO 17844 --- [main] com.zaxxer.hikari.pool.HikariPool        : CraHikariPool - Added connection org.postgresql.jdbc.PgConnection@2efd2f21
-2025-08-28T16:16:43.965-03:00  INFO 17844 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Start completed.
-2025-08-28T16:16:44.250-03:00  INFO 17844 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-28T16:16:44.404-03:00  INFO 17844 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-08-28T16:16:44.499-03:00  INFO 17844 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-28T16:16:45.020-03:00  INFO 17844 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-28T16:16:45.129-03:00  WARN 17844 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-28T16:16:47.122-03:00  INFO 17844 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-28T16:16:47.384-03:00  INFO 17844 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-28T16:16:48.084-03:00  INFO 17844 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-08-28T16:16:49.071-03:00 DEBUG 17844 --- [main] br.adv.cra.security.AuthTokenFilter      : Filter 'authTokenFilter' configured for use
-2025-08-28T16:16:49.693-03:00  WARN 17844 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-28T16:16:50.450-03:00  INFO 17844 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1dc9aba0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@382fba37, org.springframework.security.web.context.SecurityContextHolderFilter@8e654f7, org.springframework.security.web.header.HeaderWriterFilter@5808573f, org.springframework.web.filter.CorsFilter@2f81d7f, org.springframework.security.web.authentication.logout.LogoutFilter@5ee4aad3, br.adv.cra.security.AuthTokenFilter@76ac3ad0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2dacaa7f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12e4822b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@265ef3d0, org.springframework.security.web.session.SessionManagementFilter@474aeac5, org.springframework.security.web.access.ExceptionTranslationFilter@e6d9c25, org.springframework.security.web.access.intercept.AuthorizationFilter@400cb9ef]
-2025-08-28T16:16:50.995-03:00  INFO 17844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/cra-api'
-2025-08-28T16:16:51.010-03:00  INFO 17844 --- [main] br.adv.cra.CraBackendApplication         : Started CraBackendApplication in 12.78 seconds (process running for 13.571)
-2025-08-28T16:16:51.027-03:00  INFO 17844 --- [main] b.a.c.service.DatabaseConnectionService  : === DATABASE CONNECTION TEST ===
-2025-08-28T16:16:51.028-03:00  INFO 17844 --- [main] b.a.c.service.DatabaseConnectionService  : Database Product: PostgreSQL
-2025-08-28T16:16:51.029-03:00  INFO 17844 --- [main] b.a.c.service.DatabaseConnectionService  : Database Version: 17.2 (Debian 17.2-1.pgdg120+1)
-2025-08-28T16:16:51.030-03:00  INFO 17844 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Name: PostgreSQL JDBC Driver
-2025-08-28T16:16:51.031-03:00  INFO 17844 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Version: 42.6.2
-2025-08-28T16:16:51.031-03:00  INFO 17844 --- [main] b.a.c.service.DatabaseConnectionService  : URL: jdbc:postgresql://192.168.1.105:5432/dbcra
-2025-08-28T16:16:51.032-03:00  INFO 17844 --- [main] b.a.c.service.DatabaseConnectionService  : Username: postgres
-2025-08-28T16:16:51.036-03:00  INFO 17844 --- [main] b.a.c.service.DatabaseConnectionService  : Schema: public
-2025-08-28T16:16:51.037-03:00  INFO 17844 --- [main] b.a.c.service.DatabaseConnectionService  : Catalog: dbcra
-2025-08-28T16:16:51.057-03:00  INFO 17844 --- [main] b.a.c.service.DatabaseConnectionService  : Current Database Time: 2025-08-28 16:16:52.012437-03
-2025-08-28T16:16:51.058-03:00  INFO 17844 --- [main] b.a.c.service.DatabaseConnectionService  : Database connection successful! ✅
-2025-08-28T16:17:06.753-03:00  INFO 17844 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-28T16:17:06.754-03:00  INFO 17844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-28T16:17:06.756-03:00  INFO 17844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-08-28T16:17:07.320-03:00 DEBUG 17844 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:18:12.985-03:00 ERROR 17844 --- [http-nio-8080-exec-2] b.adv.cra.config.GlobalExceptionHandler  : Unexpected exception occurred: 
-
-org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/octet-stream' is not supported
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:213) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:135) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.20.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at br.adv.cra.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:51) ~[classes/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.4.jar:6.2.4]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.4.jar:6.2.4]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
-
-2025-08-28T16:23:06.831-03:00  INFO 14940 --- [main] br.adv.cra.CraBackendApplication         : Starting CraBackendApplication using Java 23.0.2 with PID 14940 (D:\Projetos\cranew\target\classes started by nsouz in D:\Projetos\cranew)
-2025-08-28T16:23:06.833-03:00 DEBUG 14940 --- [main] br.adv.cra.CraBackendApplication         : Running with Spring Boot v3.2.5, Spring v6.1.6
-2025-08-28T16:23:06.834-03:00  INFO 14940 --- [main] br.adv.cra.CraBackendApplication         : No active profile set, falling back to 1 default profile: "default"
-2025-08-28T16:23:08.815-03:00  INFO 14940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-28T16:23:09.040-03:00  INFO 14940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 200 ms. Found 8 JPA repository interfaces.
-2025-08-28T16:23:10.409-03:00  INFO 14940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-28T16:23:10.431-03:00  INFO 14940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-28T16:23:10.433-03:00  INFO 14940 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2025-08-28T16:23:10.606-03:00  INFO 14940 --- [main] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring embedded WebApplicationContext
-2025-08-28T16:23:10.607-03:00  INFO 14940 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3622 ms
-2025-08-28T16:23:10.756-03:00  INFO 14940 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Starting...
-2025-08-28T16:23:11.076-03:00  INFO 14940 --- [main] com.zaxxer.hikari.pool.HikariPool        : CraHikariPool - Added connection org.postgresql.jdbc.PgConnection@2dafae61
-2025-08-28T16:23:11.081-03:00  INFO 14940 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Start completed.
-2025-08-28T16:23:11.311-03:00  INFO 14940 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-28T16:23:11.493-03:00  INFO 14940 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-08-28T16:23:11.575-03:00  INFO 14940 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-28T16:23:12.041-03:00  INFO 14940 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-28T16:23:12.153-03:00  WARN 14940 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-28T16:23:13.917-03:00  INFO 14940 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-28T16:23:14.109-03:00  INFO 14940 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-28T16:23:14.734-03:00  INFO 14940 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-08-28T16:23:15.488-03:00 DEBUG 14940 --- [main] br.adv.cra.security.AuthTokenFilter      : Filter 'authTokenFilter' configured for use
-2025-08-28T16:23:16.014-03:00  WARN 14940 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-28T16:23:16.587-03:00  INFO 14940 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@684c2c57, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@522fc67, org.springframework.security.web.context.SecurityContextHolderFilter@20309365, org.springframework.security.web.header.HeaderWriterFilter@2c5157c9, org.springframework.web.filter.CorsFilter@479f1d09, org.springframework.security.web.authentication.logout.LogoutFilter@77cf9b08, br.adv.cra.security.AuthTokenFilter@4f74edbf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50ade311, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@191d69a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5caf9ea4, org.springframework.security.web.session.SessionManagementFilter@71c45428, org.springframework.security.web.access.ExceptionTranslationFilter@281f2d6c, org.springframework.security.web.access.intercept.AuthorizationFilter@6eb06667]
-2025-08-28T16:23:17.081-03:00  INFO 14940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/cra-api'
-2025-08-28T16:23:17.103-03:00  INFO 14940 --- [main] br.adv.cra.CraBackendApplication         : Started CraBackendApplication in 11.158 seconds (process running for 11.741)
-2025-08-28T16:23:17.113-03:00  INFO 14940 --- [main] b.a.c.service.DatabaseConnectionService  : === DATABASE CONNECTION TEST ===
-2025-08-28T16:23:17.114-03:00  INFO 14940 --- [main] b.a.c.service.DatabaseConnectionService  : Database Product: PostgreSQL
-2025-08-28T16:23:17.115-03:00  INFO 14940 --- [main] b.a.c.service.DatabaseConnectionService  : Database Version: 17.2 (Debian 17.2-1.pgdg120+1)
-2025-08-28T16:23:17.115-03:00  INFO 14940 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Name: PostgreSQL JDBC Driver
-2025-08-28T16:23:17.116-03:00  INFO 14940 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Version: 42.6.2
-2025-08-28T16:23:17.116-03:00  INFO 14940 --- [main] b.a.c.service.DatabaseConnectionService  : URL: jdbc:postgresql://192.168.1.105:5432/dbcra
-2025-08-28T16:23:17.117-03:00  INFO 14940 --- [main] b.a.c.service.DatabaseConnectionService  : Username: postgres
-2025-08-28T16:23:17.120-03:00  INFO 14940 --- [main] b.a.c.service.DatabaseConnectionService  : Schema: public
-2025-08-28T16:23:17.121-03:00  INFO 14940 --- [main] b.a.c.service.DatabaseConnectionService  : Catalog: dbcra
-2025-08-28T16:23:17.139-03:00  INFO 14940 --- [main] b.a.c.service.DatabaseConnectionService  : Current Database Time: 2025-08-28 16:23:18.110164-03
-2025-08-28T16:23:17.140-03:00  INFO 14940 --- [main] b.a.c.service.DatabaseConnectionService  : Database connection successful! ✅
-2025-08-28T16:23:24.149-03:00  INFO 14940 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-28T16:23:24.150-03:00  INFO 14940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-28T16:23:24.152-03:00  INFO 14940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-08-28T16:23:24.527-03:00 DEBUG 14940 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:25:01.883-03:00 DEBUG 14940 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:27:24.033-03:00 DEBUG 14940 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:28:57.154-03:00  INFO 9500 --- [main] br.adv.cra.CraBackendApplication         : Starting CraBackendApplication using Java 23.0.2 with PID 9500 (D:\Projetos\cranew\target\classes started by nsouz in D:\Projetos\cranew)
-2025-08-28T16:28:57.157-03:00 DEBUG 9500 --- [main] br.adv.cra.CraBackendApplication         : Running with Spring Boot v3.2.5, Spring v6.1.6
-2025-08-28T16:28:57.159-03:00  INFO 9500 --- [main] br.adv.cra.CraBackendApplication         : No active profile set, falling back to 1 default profile: "default"
-2025-08-28T16:28:59.300-03:00  INFO 9500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-28T16:28:59.492-03:00  INFO 9500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 173 ms. Found 8 JPA repository interfaces.
-2025-08-28T16:29:01.257-03:00  INFO 9500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-28T16:29:01.309-03:00  INFO 9500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-28T16:29:01.311-03:00  INFO 9500 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2025-08-28T16:29:01.503-03:00  INFO 9500 --- [main] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring embedded WebApplicationContext
-2025-08-28T16:29:01.505-03:00  INFO 9500 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4202 ms
-2025-08-28T16:29:01.745-03:00  INFO 9500 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Starting...
-2025-08-28T16:29:02.311-03:00  INFO 9500 --- [main] com.zaxxer.hikari.pool.HikariPool        : CraHikariPool - Added connection org.postgresql.jdbc.PgConnection@4bb1b96b
-2025-08-28T16:29:02.320-03:00  INFO 9500 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Start completed.
-2025-08-28T16:29:02.756-03:00  INFO 9500 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-28T16:29:03.100-03:00  INFO 9500 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-08-28T16:29:03.238-03:00  INFO 9500 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-28T16:29:04.009-03:00  INFO 9500 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-28T16:29:04.140-03:00  WARN 9500 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-28T16:29:06.272-03:00  INFO 9500 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-28T16:29:06.511-03:00  INFO 9500 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-28T16:29:07.181-03:00  INFO 9500 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-08-28T16:29:08.106-03:00 DEBUG 9500 --- [main] br.adv.cra.security.AuthTokenFilter      : Filter 'authTokenFilter' configured for use
-2025-08-28T16:29:08.738-03:00  WARN 9500 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-28T16:29:09.280-03:00  INFO 9500 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3269ae62, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@259d5279, org.springframework.security.web.context.SecurityContextHolderFilter@6b4133d0, org.springframework.security.web.header.HeaderWriterFilter@180466a9, org.springframework.web.filter.CorsFilter@3c9e169f, org.springframework.security.web.authentication.logout.LogoutFilter@2f0dae44, br.adv.cra.security.AuthTokenFilter@5ce9c9e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e1349cf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b47e09c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cfc4475, org.springframework.security.web.session.SessionManagementFilter@51ce8293, org.springframework.security.web.access.ExceptionTranslationFilter@2f48adcc, org.springframework.security.web.access.intercept.AuthorizationFilter@5869f15f]
-2025-08-28T16:29:09.748-03:00  INFO 9500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/cra-api'
-2025-08-28T16:29:09.760-03:00  INFO 9500 --- [main] br.adv.cra.CraBackendApplication         : Started CraBackendApplication in 13.604 seconds (process running for 14.242)
-2025-08-28T16:29:09.769-03:00  INFO 9500 --- [main] b.a.c.service.DatabaseConnectionService  : === DATABASE CONNECTION TEST ===
-2025-08-28T16:29:09.769-03:00  INFO 9500 --- [main] b.a.c.service.DatabaseConnectionService  : Database Product: PostgreSQL
-2025-08-28T16:29:09.770-03:00  INFO 9500 --- [main] b.a.c.service.DatabaseConnectionService  : Database Version: 17.2 (Debian 17.2-1.pgdg120+1)
-2025-08-28T16:29:09.770-03:00  INFO 9500 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Name: PostgreSQL JDBC Driver
-2025-08-28T16:29:09.771-03:00  INFO 9500 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Version: 42.6.2
-2025-08-28T16:29:09.771-03:00  INFO 9500 --- [main] b.a.c.service.DatabaseConnectionService  : URL: jdbc:postgresql://192.168.1.105:5432/dbcra
-2025-08-28T16:29:09.772-03:00  INFO 9500 --- [main] b.a.c.service.DatabaseConnectionService  : Username: postgres
-2025-08-28T16:29:09.775-03:00  INFO 9500 --- [main] b.a.c.service.DatabaseConnectionService  : Schema: public
-2025-08-28T16:29:09.775-03:00  INFO 9500 --- [main] b.a.c.service.DatabaseConnectionService  : Catalog: dbcra
-2025-08-28T16:29:09.791-03:00  INFO 9500 --- [main] b.a.c.service.DatabaseConnectionService  : Current Database Time: 2025-08-28 16:29:10.809898-03
-2025-08-28T16:29:09.791-03:00  INFO 9500 --- [main] b.a.c.service.DatabaseConnectionService  : Database connection successful! ✅
-2025-08-28T16:29:18.296-03:00  INFO 9500 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-28T16:29:18.296-03:00  INFO 9500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-28T16:29:18.299-03:00  INFO 9500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-08-28T16:29:18.692-03:00 DEBUG 9500 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:29:20.295-03:00 DEBUG 9500 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:30:20.131-03:00 DEBUG 9500 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:30:21.231-03:00 DEBUG 9500 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:30:21.984-03:00 DEBUG 9500 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:30:22.695-03:00 DEBUG 9500 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:32:22.985-03:00  INFO 3308 --- [main] br.adv.cra.CraBackendApplication         : Starting CraBackendApplication using Java 23.0.2 with PID 3308 (D:\Projetos\cranew\target\classes started by nsouz in D:\Projetos\cranew)
-2025-08-28T16:32:22.987-03:00 DEBUG 3308 --- [main] br.adv.cra.CraBackendApplication         : Running with Spring Boot v3.2.5, Spring v6.1.6
-2025-08-28T16:32:22.989-03:00  INFO 3308 --- [main] br.adv.cra.CraBackendApplication         : No active profile set, falling back to 1 default profile: "default"
-2025-08-28T16:32:24.574-03:00  INFO 3308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-28T16:32:24.704-03:00  INFO 3308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 8 JPA repository interfaces.
-2025-08-28T16:32:25.954-03:00  INFO 3308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-28T16:32:25.980-03:00  INFO 3308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-28T16:32:25.981-03:00  INFO 3308 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2025-08-28T16:32:26.112-03:00  INFO 3308 --- [main] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring embedded WebApplicationContext
-2025-08-28T16:32:26.112-03:00  INFO 3308 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3011 ms
-2025-08-28T16:32:26.254-03:00  INFO 3308 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Starting...
-2025-08-28T16:32:26.559-03:00  INFO 3308 --- [main] com.zaxxer.hikari.pool.HikariPool        : CraHikariPool - Added connection org.postgresql.jdbc.PgConnection@310b2b6f
-2025-08-28T16:32:26.564-03:00  INFO 3308 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Start completed.
-2025-08-28T16:32:26.833-03:00  INFO 3308 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-28T16:32:26.963-03:00  INFO 3308 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-08-28T16:32:27.068-03:00  INFO 3308 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-28T16:32:27.536-03:00  INFO 3308 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-28T16:32:27.644-03:00  WARN 3308 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-28T16:32:29.049-03:00  INFO 3308 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-28T16:32:29.218-03:00  INFO 3308 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-28T16:32:29.759-03:00  INFO 3308 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-08-28T16:32:30.534-03:00 DEBUG 3308 --- [main] br.adv.cra.security.AuthTokenFilter      : Filter 'authTokenFilter' configured for use
-2025-08-28T16:32:31.004-03:00  WARN 3308 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-28T16:32:31.485-03:00  INFO 3308 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4bd1541f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78f18a87, org.springframework.security.web.context.SecurityContextHolderFilter@682bff78, org.springframework.security.web.header.HeaderWriterFilter@7cb9295f, org.springframework.web.filter.CorsFilter@77b6d94c, org.springframework.security.web.authentication.logout.LogoutFilter@7170da18, br.adv.cra.security.AuthTokenFilter@49c74506, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e22fdc0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74de1e9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b51a4c7, org.springframework.security.web.session.SessionManagementFilter@6adee80f, org.springframework.security.web.access.ExceptionTranslationFilter@298154d4, org.springframework.security.web.access.intercept.AuthorizationFilter@20326436]
-2025-08-28T16:32:31.874-03:00  INFO 3308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/cra-api'
-2025-08-28T16:32:31.886-03:00  INFO 3308 --- [main] br.adv.cra.CraBackendApplication         : Started CraBackendApplication in 9.664 seconds (process running for 10.224)
-2025-08-28T16:32:31.900-03:00  INFO 3308 --- [main] b.a.c.service.DatabaseConnectionService  : === DATABASE CONNECTION TEST ===
-2025-08-28T16:32:31.900-03:00  INFO 3308 --- [main] b.a.c.service.DatabaseConnectionService  : Database Product: PostgreSQL
-2025-08-28T16:32:31.901-03:00  INFO 3308 --- [main] b.a.c.service.DatabaseConnectionService  : Database Version: 17.2 (Debian 17.2-1.pgdg120+1)
-2025-08-28T16:32:31.901-03:00  INFO 3308 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Name: PostgreSQL JDBC Driver
-2025-08-28T16:32:31.902-03:00  INFO 3308 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Version: 42.6.2
-2025-08-28T16:32:31.902-03:00  INFO 3308 --- [main] b.a.c.service.DatabaseConnectionService  : URL: jdbc:postgresql://192.168.1.105:5432/dbcra
-2025-08-28T16:32:31.902-03:00  INFO 3308 --- [main] b.a.c.service.DatabaseConnectionService  : Username: postgres
-2025-08-28T16:32:31.904-03:00  INFO 3308 --- [main] b.a.c.service.DatabaseConnectionService  : Schema: public
-2025-08-28T16:32:31.904-03:00  INFO 3308 --- [main] b.a.c.service.DatabaseConnectionService  : Catalog: dbcra
-2025-08-28T16:32:31.916-03:00  INFO 3308 --- [main] b.a.c.service.DatabaseConnectionService  : Current Database Time: 2025-08-28 16:32:32.895943-03
-2025-08-28T16:32:31.916-03:00  INFO 3308 --- [main] b.a.c.service.DatabaseConnectionService  : Database connection successful! ✅
-2025-08-28T16:32:38.481-03:00  INFO 3308 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-28T16:32:38.482-03:00  INFO 3308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-28T16:32:38.483-03:00  INFO 3308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-08-28T16:32:55.619-03:00 DEBUG 3308 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:33:00.868-03:00 DEBUG 3308 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:36:43.605-03:00 ERROR 3308 --- [http-nio-8080-exec-5] br.adv.cra.security.JwtUtils             : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 3
-2025-08-28T16:36:43.615-03:00 DEBUG 3308 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:37:29.401-03:00 ERROR 3308 --- [http-nio-8080-exec-7] br.adv.cra.security.JwtUtils             : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 3
-2025-08-28T16:37:29.407-03:00 DEBUG 3308 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:37:58.757-03:00 ERROR 3308 --- [http-nio-8080-exec-8] br.adv.cra.security.JwtUtils             : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 3
-2025-08-28T16:37:58.768-03:00 DEBUG 3308 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:39:07.207-03:00 ERROR 3308 --- [http-nio-8080-exec-6] br.adv.cra.security.JwtUtils             : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 3
-2025-08-28T16:39:07.214-03:00 DEBUG 3308 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
-2025-08-28T16:40:05.926-03:00 DEBUG 3308 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
+2025-08-28T17:21:02.848-03:00 DEBUG 3428 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
+2025-08-28T17:21:36.262-03:00 DEBUG 3428 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
+2025-08-28T17:22:13.558-03:00  INFO 23812 --- [main] br.adv.cra.CraBackendApplication         : Starting CraBackendApplication using Java 23.0.2 with PID 23812 (D:\Projetos\cranew\target\classes started by nsouz in D:\Projetos\cranew)
+2025-08-28T17:22:13.560-03:00 DEBUG 23812 --- [main] br.adv.cra.CraBackendApplication         : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-08-28T17:22:13.562-03:00  INFO 23812 --- [main] br.adv.cra.CraBackendApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-28T17:22:15.235-03:00  INFO 23812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-28T17:22:15.375-03:00  INFO 23812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 8 JPA repository interfaces.
+2025-08-28T17:22:16.692-03:00  INFO 23812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-28T17:22:16.730-03:00  INFO 23812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-28T17:22:16.731-03:00  INFO 23812 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-28T17:22:16.847-03:00  INFO 23812 --- [main] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring embedded WebApplicationContext
+2025-08-28T17:22:16.848-03:00  INFO 23812 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3161 ms
+2025-08-28T17:22:16.995-03:00  INFO 23812 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Starting...
+2025-08-28T17:22:17.324-03:00  INFO 23812 --- [main] com.zaxxer.hikari.pool.HikariPool        : CraHikariPool - Added connection org.postgresql.jdbc.PgConnection@7a2fce12
+2025-08-28T17:22:17.327-03:00  INFO 23812 --- [main] com.zaxxer.hikari.HikariDataSource       : CraHikariPool - Start completed.
+2025-08-28T17:22:17.559-03:00  INFO 23812 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-28T17:22:17.734-03:00  INFO 23812 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-08-28T17:22:17.818-03:00  INFO 23812 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-28T17:22:18.266-03:00  INFO 23812 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-28T17:22:18.368-03:00  WARN 23812 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-28T17:22:19.942-03:00  INFO 23812 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-28T17:22:20.139-03:00  INFO 23812 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-28T17:22:20.815-03:00  INFO 23812 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-28T17:22:21.630-03:00 DEBUG 23812 --- [main] br.adv.cra.security.AuthTokenFilter      : Filter 'authTokenFilter' configured for use
+2025-08-28T17:22:22.169-03:00  WARN 23812 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-28T17:22:22.837-03:00  INFO 23812 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f0dae44, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79ac50fe, org.springframework.security.web.context.SecurityContextHolderFilter@28516b2d, org.springframework.security.web.header.HeaderWriterFilter@281f2d6c, org.springframework.web.filter.CorsFilter@684c2c57, org.springframework.security.web.authentication.logout.LogoutFilter@3db84bfa, br.adv.cra.security.AuthTokenFilter@53a3ccc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20309365, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7306f65f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@522fc67, org.springframework.security.web.session.SessionManagementFilter@74de1e9d, org.springframework.security.web.access.ExceptionTranslationFilter@2dacaa7f, org.springframework.security.web.access.intercept.AuthorizationFilter@5b51a4c7]
+2025-08-28T17:22:23.327-03:00  INFO 23812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/cra-api'
+2025-08-28T17:22:23.343-03:00  INFO 23812 --- [main] br.adv.cra.CraBackendApplication         : Started CraBackendApplication in 10.621 seconds (process running for 11.197)
+2025-08-28T17:22:23.354-03:00  INFO 23812 --- [main] b.a.c.service.DatabaseConnectionService  : === DATABASE CONNECTION TEST ===
+2025-08-28T17:22:23.355-03:00  INFO 23812 --- [main] b.a.c.service.DatabaseConnectionService  : Database Product: PostgreSQL
+2025-08-28T17:22:23.355-03:00  INFO 23812 --- [main] b.a.c.service.DatabaseConnectionService  : Database Version: 17.2 (Debian 17.2-1.pgdg120+1)
+2025-08-28T17:22:23.356-03:00  INFO 23812 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Name: PostgreSQL JDBC Driver
+2025-08-28T17:22:23.356-03:00  INFO 23812 --- [main] b.a.c.service.DatabaseConnectionService  : Driver Version: 42.6.2
+2025-08-28T17:22:23.356-03:00  INFO 23812 --- [main] b.a.c.service.DatabaseConnectionService  : URL: jdbc:postgresql://192.168.1.105:5432/dbcra
+2025-08-28T17:22:23.357-03:00  INFO 23812 --- [main] b.a.c.service.DatabaseConnectionService  : Username: postgres
+2025-08-28T17:22:23.360-03:00  INFO 23812 --- [main] b.a.c.service.DatabaseConnectionService  : Schema: public
+2025-08-28T17:22:23.360-03:00  INFO 23812 --- [main] b.a.c.service.DatabaseConnectionService  : Catalog: dbcra
+2025-08-28T17:22:23.377-03:00  INFO 23812 --- [main] b.a.c.service.DatabaseConnectionService  : Current Database Time: 2025-08-28 17:22:21.268133-03
+2025-08-28T17:22:23.377-03:00  INFO 23812 --- [main] b.a.c.service.DatabaseConnectionService  : Database connection successful! ✅
+2025-08-28T17:22:37.084-03:00  INFO 23812 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/cra-api]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28T17:22:37.085-03:00  INFO 23812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-28T17:22:37.088-03:00  INFO 23812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-28T17:22:37.539-03:00 DEBUG 23812 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
+2025-08-28T17:25:28.520-03:00 DEBUG 23812 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
+2025-08-28T17:25:28.648-03:00  INFO 23812 --- [http-nio-8080-exec-2] br.adv.cra.service.AuthService           : User admin authenticated successfully
+2025-08-28T17:27:48.747-03:00 ERROR 23812 --- [http-nio-8080-exec-4] br.adv.cra.security.AuthEntryPointJwt    : Unauthorized error: Full authentication is required to access this resource
+2025-08-28T17:27:58.420-03:00 ERROR 23812 --- [http-nio-8080-exec-5] br.adv.cra.security.AuthEntryPointJwt    : Unauthorized error: Full authentication is required to access this resource
+2025-08-28T17:28:41.435-03:00 ERROR 23812 --- [http-nio-8080-exec-6] br.adv.cra.security.AuthEntryPointJwt    : Unauthorized error: Full authentication is required to access this resource
+2025-08-28T17:29:12.327-03:00 DEBUG 23812 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
+2025-08-28T17:29:12.400-03:00  INFO 23812 --- [http-nio-8080-exec-7] br.adv.cra.service.AuthService           : User admin authenticated successfully
+2025-08-28T17:29:44.249-03:00 DEBUG 23812 --- [http-nio-8080-exec-8] br.adv.cra.security.AuthTokenFilter      : JWT token found: eyJhbGciOiJIUzI1NiJ9...
+2025-08-28T17:29:44.254-03:00 DEBUG 23812 --- [http-nio-8080-exec-8] br.adv.cra.security.AuthTokenFilter      : JWT token valid for user: admin
+2025-08-28T17:29:44.259-03:00 DEBUG 23812 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
+2025-08-28T17:29:44.268-03:00 DEBUG 23812 --- [http-nio-8080-exec-8] br.adv.cra.security.AuthTokenFilter      : Authentication set for user: admin
+2025-08-28T17:29:44.273-03:00 DEBUG 23812 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
+2025-08-28T17:29:44.347-03:00  INFO 23812 --- [http-nio-8080-exec-8] br.adv.cra.service.AuthService           : User admin authenticated successfully
+2025-08-28T17:30:22.142-03:00 DEBUG 23812 --- [http-nio-8080-exec-9] br.adv.cra.security.AuthTokenFilter      : JWT token found: eyJhbGciOiJIUzI1NiJ9...
+2025-08-28T17:30:22.147-03:00 DEBUG 23812 --- [http-nio-8080-exec-9] br.adv.cra.security.AuthTokenFilter      : JWT token valid for user: admin
+2025-08-28T17:30:22.152-03:00 DEBUG 23812 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0 where u1_0.login=?
+2025-08-28T17:30:22.163-03:00 DEBUG 23812 --- [http-nio-8080-exec-9] br.adv.cra.security.AuthTokenFilter      : Authentication set for user: admin
+2025-08-28T17:30:22.179-03:00 DEBUG 23812 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : /* <criteria> */ select u1_0.idusuario,u1_0.ativo,u1_0.correspondente_id,u1_0.dataentrada,u1_0.emailprincipal,u1_0.emailresponsavel,u1_0.emailsecundario,u1_0.login,u1_0.nomecompleto,u1_0.senha,u1_0.tipo from usuario u1_0
