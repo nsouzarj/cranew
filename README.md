@@ -345,6 +345,7 @@ psql -h 192.168.1.105 -U postgres -d dbcra -f database/fix-passwords.sql
 Login: admin, Senha: admin123 (ROLE_ADMIN)
 Login: advogado1, Senha: adv123 (ROLE_ADVOGADO)  
 Login: corresp1, Senha: corresp123 (ROLE_CORRESPONDENTE)
+Login: isomina, Senha: isomina123 (ROLE_ADVOGADO)
 ```
 
 3. **Testar login após correção:**

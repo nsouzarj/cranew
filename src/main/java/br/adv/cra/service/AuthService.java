@@ -19,7 +19,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
@@ -166,5 +168,41 @@ public class AuthService {
         // Reload from database to get fresh data
         return usuarioRepository.findById(usuario.getId())
                 .orElseThrow(() -> new RuntimeException("Usuário não encontrado!"));
+    }
+    
+    @Transactional(readOnly = true)
+    public Map<String, Object> testPasswordHash(String username, String password) {
+        Map<String, Object> result = new HashMap<>();
+        
+        try {
+            Usuario usuario = usuarioRepository.findByLogin(username)
+                    .orElseThrow(() -> new RuntimeException("Usuário não encontrado!"));
+            
+            String storedHash = usuario.getSenha();
+            boolean matches = passwordEncoder.matches(password, storedHash);
+            
+            result.put("username", username);
+            result.put("passwordProvided", password);
+            result.put("storedHashPrefix", storedHash.substring(0, Math.min(20, storedHash.length())) + "...");
+            result.put("passwordMatches", matches);
+            result.put("userActive", usuario.getAtivo());
+            result.put("userType", usuario.getTipo());
+            result.put("hashLength", storedHash.length());
+            result.put("hashValidFormat", storedHash.startsWith("$2a$") || storedHash.startsWith("$2b$") || storedHash.startsWith("$2y$"));
+            
+            if (matches) {
+                result.put("status", "SUCCESS");
+                result.put("message", "Password matches stored hash");
+            } else {
+                result.put("status", "FAILED");
+                result.put("message", "Password does not match stored hash");
+            }
+            
+        } catch (Exception e) {
+            result.put("status", "ERROR");
+            result.put("message", e.getMessage());
+        }
+        
+        return result;
     }
 }

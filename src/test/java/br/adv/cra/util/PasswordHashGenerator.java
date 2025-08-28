@@ -16,8 +16,8 @@ public class PasswordHashGenerator {
         System.out.println("=== BCrypt Password Hashes ===");
         System.out.println();
         
-        String[] passwords = {"admin123", "adv123", "corresp123"};
-        String[] users = {"admin", "advogado1", "corresp1"};
+        String[] passwords = {"admin123", "adv123", "corresp123", "isomina123"};
+        String[] users = {"admin", "advogado1", "corresp1", "isomina"};
         
         for (int i = 0; i < passwords.length; i++) {
             String hash = passwordEncoder.encode(passwords[i]);

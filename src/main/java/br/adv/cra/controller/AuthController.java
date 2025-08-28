@@ -25,7 +25,7 @@ public class AuthController {
     private final AuthService authService;
     private final DatabaseConnectionService databaseConnectionService;
     
-    @PostMapping("/login")
+    @PostMapping(value = "/login", consumes = "application/json", produces = "application/json")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
         try {
             JwtResponse jwtResponse = authService.authenticate(loginRequest);
@@ -38,7 +38,7 @@ public class AuthController {
         }
     }
     
-    @PostMapping("/register")
+    @PostMapping(value = "/register", consumes = "application/json", produces = "application/json")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<?> registerUser(@Valid @RequestBody RegisterRequest registerRequest) {
         try {
@@ -52,7 +52,7 @@ public class AuthController {
         }
     }
     
-    @PostMapping("/refresh")
+    @PostMapping(value = "/refresh", consumes = "application/json", produces = "application/json")
     public ResponseEntity<?> refreshToken(@Valid @RequestBody RefreshTokenRequest request) {
         try {
             JwtResponse jwtResponse = authService.refreshToken(request);
@@ -65,7 +65,7 @@ public class AuthController {
         }
     }
     
-    @GetMapping("/me")
+    @GetMapping(value = "/me", produces = "application/json")
     public ResponseEntity<?> getCurrentUser(Authentication authentication) {
         try {
             Usuario usuario = authService.getCurrentUser(authentication);
@@ -91,7 +91,7 @@ public class AuthController {
         }
     }
     
-    @PostMapping("/logout")
+    @PostMapping(value = "/logout", produces = "application/json")
     public ResponseEntity<?> logoutUser() {
         // In a JWT stateless setup, logout is typically handled client-side
         // by removing the token from storage. However, we can provide a 
@@ -101,7 +101,7 @@ public class AuthController {
         return ResponseEntity.ok(response);
     }
     
-    @GetMapping("/validate")
+    @GetMapping(value = "/validate", produces = "application/json")
     public ResponseEntity<?> validateToken(Authentication authentication) {
         try {
             Usuario usuario = authService.getCurrentUser(authentication);
@@ -120,7 +120,7 @@ public class AuthController {
         }
     }
     
-    @GetMapping("/database-info")
+    @GetMapping(value = "/database-info", produces = "application/json")
     public ResponseEntity<?> getDatabaseInfo() {
         try {
             Map<String, Object> dbInfo = databaseConnectionService.getDatabaseInfo();
@@ -130,6 +130,22 @@ public class AuthController {
             error.put("error", "Database connection failed");
             error.put("message", e.getMessage());
             return ResponseEntity.status(500).body(error);
+        }
+    }
+    
+    @PostMapping(value = "/test-password", consumes = "application/json", produces = "application/json")
+    public ResponseEntity<?> testPassword(@RequestBody Map<String, String> request) {
+        try {
+            String username = request.get("username");
+            String password = request.get("password");
+            
+            Map<String, Object> result = authService.testPasswordHash(username, password);
+            return ResponseEntity.ok(result);
+        } catch (Exception e) {
+            Map<String, Object> error = new HashMap<>();
+            error.put("error", "Test failed");
+            error.put("message", e.getMessage());
+            return ResponseEntity.badRequest().body(error);
         }
     }
 }
