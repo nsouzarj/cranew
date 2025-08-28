@@ -46,6 +46,7 @@ public class SecurityConfig {
         return authConfig.getAuthenticationManager();
     }
     
+    @SuppressWarnings("removal")
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.cors(cors -> cors.configurationSource(request -> {
