@@ -13,7 +13,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/correspondentes")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "*")
 public class CorrespondenteController {
     
     private final CorrespondenteService correspondenteService;

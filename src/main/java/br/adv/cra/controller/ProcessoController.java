@@ -13,7 +13,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/processos")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "*")
 public class ProcessoController {
     
     private final ProcessoService processoService;

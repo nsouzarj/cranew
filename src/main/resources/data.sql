@@ -39,11 +39,11 @@ SELECT 'Sorocaba', u.id FROM uf u WHERE u.sigla = 'SP'
 ON CONFLICT (nome, uf_id) DO NOTHING;
 
 -- Some basic users (passwords are encrypted with BCrypt)
--- admin/admin123 -> $2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iYqiSfFD8cS/rGdbKfgLOJ3bJmee
--- adv123 -> $2a$10$9.k2T7VXP8YcM8fHcS4dQeK6v5VY5i5u5Z8Y1Y1Z8Y1Y1Z8Y1Y1Z8
--- corresp123 -> $2a$10$7.k2T7VXP8YcM8fHcS4dQeK6v5VY5i5u5Z8Y1Y1Z8Y1Y1Z8Y1Y1Z8
+-- admin/admin123 -> $2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.
+-- advogado1/adv123 -> $2a$10$eImiTXuWVxfM37uY4JANjOHyqQxFPHSRwdd/Q7r8STgdmgMZnFNzm
+-- corresp1/corresp123 -> $2a$10$X5wFBtLrL/.p03LkBOJfsuO1DsiK.mq9QhTf5SNEFm2ReDJSTQFpu
 INSERT INTO usuario (login, senha, nomecompleto, emailprincipal, tipo, dataentrada, ativo) VALUES 
-('admin', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iYqiSfFD8cS/rGdbKfgLOJ3bJmee', 'Administrador do Sistema', 'admin@cra.com.br', 1, CURRENT_TIMESTAMP, true),
-('advogado1', '$2a$10$9.k2T7VXP8YcM8fHcS4dQeK6v5VY5i5u5Z8Y1Y1Z8Y1Y1Z8Y1Y1Z8', 'Dr. João Silva', 'joao.silva@cra.com.br', 2, CURRENT_TIMESTAMP, true),
-('corresp1', '$2a$10$7.k2T7VXP8YcM8fHcS4dQeK6v5VY5i5u5Z8Y1Y1Z8Y1Y1Z8Y1Y1Z8', 'Maria Santos', 'maria.santos@correspondente.com.br', 3, CURRENT_TIMESTAMP, true)
+('admin', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', 'Administrador do Sistema', 'admin@cra.com.br', 1, CURRENT_TIMESTAMP, true),
+('advogado1', '$2a$10$eImiTXuWVxfM37uY4JANjOHyqQxFPHSRwdd/Q7r8STgdmgMZnFNzm', 'Dr. João Silva', 'joao.silva@cra.com.br', 2, CURRENT_TIMESTAMP, true),
+('corresp1', '$2a$10$X5wFBtLrL/.p03LkBOJfsuO1DsiK.mq9QhTf5SNEFm2ReDJSTQFpu', 'Maria Santos', 'maria.santos@correspondente.com.br', 3, CURRENT_TIMESTAMP, true)
 ON CONFLICT (login) DO NOTHING;

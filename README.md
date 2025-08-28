@@ -332,6 +332,28 @@ host    all             all             0.0.0.0/0               md5
 curl http://localhost:8080/cra-api/api/auth/database-info
 ```
 
+### Problemas de Autenticação:
+
+1. **Erro "Credenciais inválidas":**
+```bash
+# Execute o script de correção de senhas no PostgreSQL
+psql -h 192.168.1.105 -U postgres -d dbcra -f database/fix-passwords.sql
+```
+
+2. **Usuários padrão após correção:**
+```
+Login: admin, Senha: admin123 (ROLE_ADMIN)
+Login: advogado1, Senha: adv123 (ROLE_ADVOGADO)  
+Login: corresp1, Senha: corresp123 (ROLE_CORRESPONDENTE)
+```
+
+3. **Testar login após correção:**
+```bash
+curl -X POST http://localhost:8080/cra-api/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"login":"admin","senha":"admin123"}'
+```
+
 ### Logs do Sistema:
 ```bash
 # Verificar logs da aplicação

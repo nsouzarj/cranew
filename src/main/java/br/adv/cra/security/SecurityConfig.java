@@ -54,6 +54,7 @@ public class SecurityConfig {
                     corsConfiguration.setAllowedMethods(java.util.List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
                     corsConfiguration.setAllowedHeaders(java.util.List.of("*"));
                     corsConfiguration.setAllowCredentials(true);
+                    corsConfiguration.setMaxAge(3600L);
                     return corsConfiguration;
                 }))
                 .csrf(AbstractHttpConfigurer::disable)
